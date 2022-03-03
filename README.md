@@ -32,6 +32,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
