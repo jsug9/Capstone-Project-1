@@ -2,7 +2,7 @@
 
 # Capstone Project
 
-> In this project I build a mobile and desktop version of a website, using what I learned in HTML and CSS.
+> In this project I build a mobile and desktop version of a website, using what I learned in HTML, CSS and JavaScript.
 
 ## Built With
 
