@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-For a live demo of the Portfolio [click here](https://jsug9.github.io/Capstone-Project-1/)
+For a live demo of the Portfolio [click here](https://jsug9.github.io/Capstone-Project-1/).
 
 ## Author
 
