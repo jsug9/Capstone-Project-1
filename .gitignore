@@ -1,0 +1,3 @@
+# .gitignore
+node_modules/
+echo .DS_Store
