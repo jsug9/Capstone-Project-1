@@ -1,0 +1,11 @@
+:root {
+  --main: #272a31;
+  --highlight: #ec5242;
+  --background: #d3d3d3;
+  --lato: 'Lato', sans-serif;
+  --cocogoose: 'COCOGOOSE', sans-serif;
+}
+
+body {
+  font-family: var(--lato);
+}
