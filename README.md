@@ -33,3 +33,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
