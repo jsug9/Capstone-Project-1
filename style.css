@@ -11,9 +11,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  
+  #home-li {
+    /* May need to be changed to hide dot */
+    display: list-item;
+  }
 }
 
 @media (min-width: 768px) {
-  
+  #home-li {
+    display: none;
+  }
 }
