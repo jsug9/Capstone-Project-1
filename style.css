@@ -18,6 +18,12 @@ body {
   margin: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -28,6 +34,7 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
+  color: var(--main);
 }
 
 .toggle-nav {
@@ -38,10 +45,9 @@ a:visited {
 }
 
 header {
-  overflow: hidden;
   background-color: white;
   position: relative;
-  top: 0; /* Position the navbar at the top of the page */
+  top: 0;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -51,9 +57,19 @@ header {
 }
 
 .topbar {
+  padding: 0.4rem 5rem;
   width: 100%;
   display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
   background-color: var(--main);
+}
+
+.topbar-ul {
+  display: flex;
+  align-items: baseline;
+  justify-items: baseline;
+  gap: 15px;
 }
 
 .topbar-li a {
@@ -67,7 +83,7 @@ header {
 
   .topbar,
   #logo,
-  .left-logo {
+  .right-logo {
     display: none;
   }
 
@@ -128,22 +144,18 @@ header {
 }
 
 @media (min-width: 768px) {
-  .topbar {
-    padding: 0.4rem 5rem;
-  }
-
   .navbar-div {
-    padding: 0 5rem;
-  }
-
-  .topbar-ul {
+    padding: 0.7rem 5rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .navbar-div {
+  .right-navbar {
     display: flex;
-    flex-direction: row;
+    gap: 25px;
   }
 
   nav {
@@ -153,7 +165,7 @@ header {
     position: relative;
     display: flex;
     padding-left: 0;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
   }
 
@@ -175,6 +187,12 @@ header {
     font-size: 15px;
     transition: opacity 1s;
     transition: font-size 0.5s;
+  }
+
+  .right-logo-div {
+    display: flex;
+    padding: 5px 15px;
+    border: 3px solid var(--highlight);
   }
 
   .toggle-nav {
