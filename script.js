@@ -16,7 +16,7 @@ document.getElementById('closebtn').addEventListener('click', () => {
   closeNav();
 });
 
-document.querySelectorAll('.nav-bar-link').forEach((n) => n.addEventListener('click', () => {
+document.querySelectorAll('.menu-li').forEach((n) => n.addEventListener('click', () => {
   document.getElementById('menu').style.width = '0%';
 }));
 

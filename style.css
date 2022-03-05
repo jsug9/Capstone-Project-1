@@ -52,10 +52,6 @@ header {
     display: none;
   }
 
-  /* #home-li {
-    display: list-item;
-  } */
-
   nav {
     height: 100%;
     width: 0;
@@ -90,7 +86,7 @@ header {
   }
 
   nav a {
-    padding: 8px;
+    padding: 10px;
     text-decoration: none;
     font-size: 36px;
     color: var(--background);
@@ -100,6 +96,7 @@ header {
 
   nav a:hover {
     color: var(--highlight);
+    font-size: 38px;
   }
 
   .closebtn {
