@@ -6,8 +6,16 @@
   --cocogoose: 'COCOGOOSE', sans-serif;
 }
 
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: var(--lato);
+  background-color: white;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -30,6 +38,7 @@ a:visited {
 }
 
 header {
+  overflow: hidden;
   background-color: white;
   position: relative;
   top: 0; /* Position the navbar at the top of the page */
@@ -39,6 +48,16 @@ header {
   align-items: baseline;
   justify-items: baseline;
   border-color: transparent;
+}
+
+.topbar {
+  width: 100%;
+  display: flex;
+  background-color: var(--main);
+}
+
+.topbar-li a {
+  color: var(--background);
 }
 
 @media (max-width: 768px) {
@@ -108,7 +127,11 @@ header {
 }
 
 @media (min-width: 768px) {
-  header {
+  .topbar {
+    padding: 0.4rem 5rem;
+  }
+
+  .navbar-div {
     padding: 0 5rem;
   }
 
