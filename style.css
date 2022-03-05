@@ -34,7 +34,6 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
-  color: var(--main);
 }
 
 .toggle-nav {
@@ -144,6 +143,10 @@ header {
 }
 
 @media (min-width: 768px) {
+  a {
+    color: var(--main);
+  }
+  
   .navbar-div {
     padding: 0.7rem 5rem;
     width: 100%;
