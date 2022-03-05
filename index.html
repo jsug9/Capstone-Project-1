@@ -30,15 +30,28 @@
       </div>
       
       <nav class="menu" id="menu">
-        <span class="toggle-nav" id="openbtn">&#9776;</span>
-        <ul class="menu-ul" id="menu-ul">
-          <li class="menu-li" id="home-li"><a href="#">Home</a></li>
-          <li class="menu-li"><a href="#">About</a></li>
-          <li class="menu-li"><a href="#">Program</a></li>
-          <li class="menu-li"><a href="#">Join</a></li>
-          <li class="menu-li"><a href="#">Sponsor</a></li>
-          <li class="menu-li"><a href="#">News</a></li>
-        </ul>
+        <div class="left-navbar">
+          <!-- We could have a single element changed with js innerHTML Content -->
+          <a href="index.html" id="logo">Logo</a>
+          <span class="toggle-nav" id="openbtn">&#9776;</span>
+          
+          <a class="closebtn" id="closebtn">&times;</a>
+        </div>
+
+        <div class="right-navbar">
+          <ul class="menu-ul" id="menu-ul">
+            <li class="menu-li" id="home-li"><a href="#">Home</a></li>
+            <li class="menu-li"><a href="#">About</a></li>
+            <li class="menu-li"><a href="#">Program</a></li>
+            <li class="menu-li"><a href="#">Join</a></li>
+            <li class="menu-li"><a href="#">Sponsor</a></li>
+            <li class="menu-li"><a href="#">News</a></li>
+          </ul>
+  
+          <div class="right-logo-div">
+            <a href="#" class="left-logo">Left Logo</a>
+          </div>
+        </div>
       </nav>
     </header>
 
