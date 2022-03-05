@@ -10,14 +10,160 @@ body {
   font-family: var(--lato);
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.toggle-nav {
+  text-decoration: none;
+  font-size: 40px;
+  color: var(--main-theme);
+  cursor: pointer;
+}
+
+header {
+  background-color: white;
+  position: relative;
+  top: 0; /* Position the navbar at the top of the page */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: baseline;
+  justify-items: baseline;
+  border-color: transparent;
+}
+
 @media (max-width: 768px) {
-  #home-li {
-    /* May need to be changed to hide dot */
+  header {
+    padding: 0;
+  }
+
+  .topbar,
+  #logo,
+  .left-logo {
+    display: none;
+  }
+
+  /* #home-li {
     display: list-item;
+  } */
+
+  nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: var(--main);
+    backdrop-filter: blur(3rem);
+    opacity: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .menu-ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 120px;
+    font-weight: bold;
+  }
+
+  .menu-li:hover {
+    opacity: 0.7;
+    font-size: 35px;
+    transition: opacity 1s;
+    transition: font-size 0.5s;
+  }
+
+  nav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--background);
+    display: block;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--highlight);
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 45px;
   }
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 0 5rem;
+  }
+
+  .topbar-ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav {
+    left: 0;
+    top: 0;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    padding-left: 0;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+
+  .menu-ul {
+    gap: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 0;
+    width: fit-content;
+    font-weight: bold;
+  }
+
+  .menu-li:hover {
+    opacity: 0.7;
+    font-size: 15px;
+    transition: opacity 1s;
+    transition: font-size 0.5s;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  .closebtn {
+    display: none;
+  }
+
   #home-li {
     display: none;
   }
