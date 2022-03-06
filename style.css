@@ -76,6 +76,10 @@ header {
   height: 45px;
 }
 
+.navbar-logo:hover {
+  height: 50px;
+}
+
 .topbar-li a {
   color: var(--background);
 }
@@ -83,6 +87,29 @@ header {
 .home-footer {
   display: flex;
   flex-direction: column;
+}
+
+.right-logo {
+  color: inherit;
+  font-weight: bold;
+}
+
+.right-logo-div {
+  display: flex;
+  padding: 5px 15px;
+  border: 3px solid var(--highlight);
+  color: var(--highlight);
+}
+
+.right-logo-div:hover {
+  background-color: var(--highlight);
+  opacity: 0.8;
+  color: white;
+}
+
+.right-logo-div:active {
+  background-color: var(--highlight);
+  opacity: 1;
 }
 
 .about-footer {
@@ -132,6 +159,11 @@ hr {
   gap: 5%;
 }
 
+.bottom-logo {
+  width: auto;
+  height: 50px;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 0;
@@ -139,7 +171,8 @@ hr {
 
   .topbar,
   #logo,
-  .right-logo {
+  .right-logo,
+  .right-logo-div {
     display: none;
   }
 
@@ -247,12 +280,6 @@ hr {
     font-size: 15px;
     transition: opacity 1s;
     transition: font-size 0.5s;
-  }
-
-  .right-logo-div {
-    display: flex;
-    padding: 5px 15px;
-    border: 3px solid var(--highlight);
   }
 
   .toggle-nav {
