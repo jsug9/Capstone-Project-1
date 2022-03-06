@@ -71,6 +71,11 @@ header {
   gap: 15px;
 }
 
+.navbar-logo {
+  width: auto;
+  height: 45px;
+}
+
 .topbar-li a {
   color: var(--background);
 }
