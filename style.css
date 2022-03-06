@@ -80,6 +80,17 @@ footer {
   flex-direction: column;
 }
 
+.about-footer {
+  background-color: #424146;
+  color: white;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
 .sponsors {
   background-color: #424146;
   padding: 2rem;
