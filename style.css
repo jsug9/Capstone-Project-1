@@ -77,7 +77,7 @@ header {
 }
 
 .navbar-logo:hover {
-  height: 50px;
+  opacity: 0.5;
 }
 
 .topbar-li a {
