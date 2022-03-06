@@ -75,7 +75,7 @@ header {
   color: var(--background);
 }
 
-footer {
+.home-footer {
   display: flex;
   flex-direction: column;
 }
