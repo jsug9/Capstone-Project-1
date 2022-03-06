@@ -1,5 +1,4 @@
 // Mobile Menu
-
 function openNav() {
   document.getElementById('menu').style.width = '100%';
 }
@@ -31,3 +30,45 @@ window.addEventListener('resize', () => {
     document.getElementById('menu').style.width = '0%';
   }
 });
+
+// Band Integers
+const bandIntegers = [
+  {
+    image: '/Resources/band/member1',
+    name: 'Alejandro Chavez',
+    position: 'Lead Singer',
+    description: 'Specialist in covers and stuff like that',
+  },
+  {
+    image: '/Resources/band/member1',
+    name: 'Alejandro Chavez',
+    position: 'Lead Singer',
+    description: 'Specialist in covers and stuff like that',
+  },
+  {
+    image: '/Resources/band/member1',
+    name: 'Alejandro Chavez',
+    position: 'Lead Singer',
+    description: 'Specialist in covers and stuff like that',
+  },
+  {
+    image: '/Resources/band/member1',
+    name: 'Alejandro Chavez',
+    position: 'Lead Singer',
+    description: 'Specialist in covers and stuff like that',
+  },
+  {
+    image: '/Resources/band/member1',
+    name: 'Alejandro Chavez',
+    position: 'Lead Singer',
+    description: 'Specialist in covers and stuff like that',
+  },
+  {
+    image: '/Resources/band/member1',
+    name: 'Alejandro Chavez',
+    position: 'Lead Singer',
+    description: 'Specialist in covers and stuff like that',
+  },
+];
+
+// Band Integers Section
