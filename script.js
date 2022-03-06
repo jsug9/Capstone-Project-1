@@ -17,7 +17,9 @@ document.getElementById('closebtn').addEventListener('click', () => {
 });
 
 document.querySelectorAll('.menu-li').forEach((n) => n.addEventListener('click', () => {
-  document.getElementById('menu').style.width = '0%';
+  if (window.innerWidth <= 800) {
+    document.getElementById('menu').style.width = '0%';
+  }
 }));
 
 window.addEventListener('resize', () => {
