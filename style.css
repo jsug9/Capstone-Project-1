@@ -282,6 +282,16 @@ hr {
     transition: font-size 0.5s;
   }
 
+  nav a:hover {
+    color: var(--highlight);
+  }
+
+  nav a:active,
+  .menu-li:active {
+    color: var(--highlight);
+    opacity: 1;
+  }
+
   .toggle-nav {
     display: none;
   }
