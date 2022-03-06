@@ -81,7 +81,7 @@ footer {
 }
 
 .sponsors {
-  background-color: #3f444f;
+  background-color: #424146;
   padding: 2rem;
   color: white;
   display: flex;
@@ -93,7 +93,6 @@ footer {
 
 hr {
   width: 10%;
-  margin-inline: auto;
   border: none;
   height: 3px;
   background: var(--highlight);
