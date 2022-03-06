@@ -31,10 +31,10 @@ window.addEventListener('resize', () => {
   }
 });
 
-// Band Integers
-const bandIntegers = [
+// Band Members
+const bandMembers = [
   {
-    image: '/Resources/band/member1',
+    image: '/Resources/band/member1.jpeg',
     name: 'Alejandro Chavez',
     position: 'Lead Singer',
     description: 'Specialist in covers and stuff like that',
@@ -71,4 +71,4 @@ const bandIntegers = [
   },
 ];
 
-// Band Integers Section
+// Band Members Section
