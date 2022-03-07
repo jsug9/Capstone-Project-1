@@ -123,6 +123,54 @@ header {
   opacity: 1;
 }
 
+/* Main Program */
+.concert-agenda {
+  background-image: url(Resources/backgrounds/repeat-x.png);
+  background-repeat: repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.program {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.program-div {
+  display: flex;
+  align-items: center;
+  background-color: var(--main);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.program-icon {
+  font-size: 30px;
+}
+
+.program-div-title {
+  color: var(--highlight);
+}
+
+.buy-tickets {
+  color: white;
+  text-decoration: underline !important;
+  padding-top: 1rem;
+}
+
+.buy-tickets:hover {
+  color: var(--highlight);
+  opacity: 0.7;
+}
+
+.buy-tickets:active {
+  opacity: 1;
+}
+
 /* Band Members */
 .band-members {
   display: flex;
@@ -283,6 +331,18 @@ hr {
     font-size: 45px;
   }
 
+  .concert-agenda {
+    padding: 3rem 1rem;
+  }
+
+  .program {
+    flex-direction: column;
+  }
+
+  .program-div {
+    flex-direction: row;
+  }
+
   .members {
     padding: 0rem 1rem;
     grid-template-columns: auto;
@@ -360,6 +420,18 @@ hr {
 
   #home-li {
     display: none;
+  }
+
+  .concert-agenda {
+    padding: 3rem 5rem;
+  }
+
+  .program {
+    flex-direction: row;
+  }
+
+  .program-div {
+    flex-direction: column;
   }
 
   .members {
