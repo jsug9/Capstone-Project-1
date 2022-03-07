@@ -74,7 +74,7 @@ bandMembers.forEach((member, index) => {
 
   bandMember.innerHTML = `
   <div class="img-div">
-    <img src="Resources/band/member${index}.png" alt="Band Member Photo" class="band-member-image">
+    <img src="Resources/band/member${index}.png" alt="Band Member Picture" class="band-member-image">
   </div>
   <div class="member-details">
     <h3 class="member-name">${member.name}</h3>
