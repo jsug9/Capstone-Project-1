@@ -84,6 +84,16 @@ header {
   color: var(--background);
 }
 
+.topbar-li a:hover {
+  color: var(--highlight);
+  opacity: 0.7;
+}
+
+.topbar-li a:active {
+  color: var(--highlight);
+  opacity: 1;
+}
+
 .home-footer {
   display: flex;
   flex-direction: column;
@@ -291,6 +301,7 @@ hr {
 
   nav a:hover {
     color: var(--highlight);
+    transition: color 0.5s;
   }
 
   nav a:active,
