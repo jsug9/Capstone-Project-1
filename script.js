@@ -72,3 +72,23 @@ const bandMembers = [
 ];
 
 // Band Members Section
+const membersSection = document.getElementById('members');
+
+bandMembers.forEach((member, index) => {
+  const bandMember = document.createElement('div')
+  bandMember.setAttribute('class', 'band-member')
+
+  bandMember.innerHTML = `
+  <div class="img-div">
+    <img src="/Resources/band/member${index}.png" alt="Band Member Photo" class="band-member-image">
+  </div>
+  <div class="member-details">
+    <h3 class="member-name">${member.name}</h3>
+    <p class="member-position">${member.position}</p>
+    <p class="dots-separation">.........</p>
+    <p class="member-description">${member.description}</p>
+  </div>
+  `
+
+  membersSection.appendChild(bandMember)
+})
