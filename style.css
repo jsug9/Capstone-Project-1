@@ -258,6 +258,7 @@ hr {
 }
 
 /* -----------------------ABOUT------------------------- */
+
 /* Post */
 .post-logo {
   width: auto;
@@ -356,13 +357,13 @@ hr {
   .program-div-title {
     font-size: 13px;
   }
-  
+
   .program-div-description {
     font-size: 12px;
   }
 
   .members {
-    padding: 0rem 1rem;
+    padding: 0 1rem;
     grid-template-columns: auto;
   }
 }
@@ -463,7 +464,7 @@ hr {
   }
 
   .members {
-    padding: 0rem 5rem;
+    padding: 0 5rem;
     grid-template-columns: auto auto;
   }
 }
