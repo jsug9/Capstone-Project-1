@@ -145,7 +145,7 @@ header {
   align-items: center;
   background-color: var(--main);
   padding: 1rem;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .program-icon {
@@ -343,6 +343,24 @@ hr {
     flex-direction: row;
   }
 
+  .program-icon {
+    min-width: 30px;
+  }
+
+  .program-title-div {
+    display: flex;
+    min-width: 65px;
+    width: 65px;
+  }
+
+  .program-div-title {
+    font-size: 13px;
+  }
+  
+  .program-div-description {
+    font-size: 10px;
+  }
+
   .members {
     padding: 0rem 1rem;
     grid-template-columns: auto;
@@ -432,6 +450,16 @@ hr {
 
   .program-div {
     flex-direction: column;
+  }
+
+  .program-icon {
+    min-height: 30px;
+  }
+
+  .program-title-div {
+    display: flex;
+    min-height: 40px;
+    text-align: center;
   }
 
   .members {
