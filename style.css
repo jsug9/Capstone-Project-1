@@ -148,10 +148,6 @@ header {
   gap: 10px;
 }
 
-.program-icon {
-  font-size: 30px;
-}
-
 .program-div-title {
   color: var(--highlight);
 }
@@ -345,21 +341,18 @@ hr {
   }
 
   .program-icon {
-    min-width: 30px;
+    font-size: 20px;
+    min-width: 20px;
   }
 
-  .program-title-div {
-    display: flex;
+  .program-div-title {
+    font-size: 15px;
     min-width: 65px;
     width: 65px;
   }
 
-  .program-div-title {
-    font-size: 13px;
-  }
-
   .program-div-description {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .members {
@@ -454,7 +447,7 @@ hr {
   }
 
   .program-icon {
-    min-height: 30px;
+    font-size: 30px;
   }
 
   .program-title-div {
