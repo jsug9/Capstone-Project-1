@@ -112,6 +112,13 @@ header {
   opacity: 1;
 }
 
+/* Band Members */
+.band-member-image {
+  width: auto;
+  height: 50px;
+}
+
+/* Footer */
 .about-footer {
   background-color: #424146;
   color: white;
