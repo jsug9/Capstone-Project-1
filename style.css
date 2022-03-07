@@ -322,3 +322,9 @@ hr {
     display: none;
   }
 }
+
+
+.fa-guitar-electric {
+  color: #ec5242;
+  font-size: 50px;
+}
