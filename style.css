@@ -318,6 +318,48 @@ hr {
   gap: 5%;
 }
 
+/* Past Concerts */
+.past-concerts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.events {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-color: var(--highlight);
+  background-blend-mode: multiply;
+  background-size: cover;
+  flex-direction: column;
+  color: white;
+  padding: 80px 0;
+  gap: 0.5rem;
+}
+
+.event-date {
+  font-family: var(--cocogoose);
+}
+
+#event1 {
+  background-image: url(Resources/about/event1.jpg);
+}
+
+#event2 {
+  background-image: url(Resources/about/event2.jpg);
+}
+
 @media (max-width: 768px) {
   header {
     padding: 0;
@@ -427,6 +469,14 @@ hr {
 
   .post {
     padding: 7.5% 5%;
+  }
+
+  .past-concerts {
+    padding: 5% 4%;
+  }
+
+  .events {
+    grid-template-columns: auto;
   }
 }
 
@@ -540,6 +590,14 @@ hr {
 
   .members {
     padding: 0 5rem;
+    grid-template-columns: auto auto;
+  }
+
+  .past-concerts {
+    padding: 5% 15%;
+  }
+
+  .events {
     grid-template-columns: auto auto;
   }
 
