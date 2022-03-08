@@ -1,3 +1,45 @@
+// Navbar
+function setNav(header) {
+  header.innerHTML = `
+  <div class="topbar">
+    <ul class="topbar-ul">
+      <li class="topbar-li"><a href="#"><span class="iconify" data-icon="brandico:facebook"></span></a></li>
+      <li class="topbar-li"><a href="#"><span class="iconify" data-icon="akar-icons:twitter-fill"></span></a></li>
+      <li class="topbar-li"><a href="#">English</a></li>
+      <li class="topbar-li"><a href="#">My page</a></li>
+      <li class="topbar-li"><a href="#">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-div">
+    <div class="left-navbar">
+      <a href="index.html" id="logo"><img src="Resources/logo.png" alt="Logo" class="navbar-logo"></a>
+      <span class="toggle-nav" id="openbtn">&#9776;</span>
+    </div>
+
+    <div class="right-navbar">
+      <nav class="menu" id="menu">
+        <a class="closebtn" id="closebtn">&times;</a>
+        <ul class="menu-ul" id="menu-ul">
+          <li class="menu-li" id="home-li"><a href="index.html">Home</a></li>
+          <li class="menu-li"><a href="about.html">About</a></li>
+          <li class="menu-li"><a href="#">Program</a></li>
+          <li class="menu-li"><a href="#">Join</a></li>
+          <li class="menu-li"><a href="#">Sponsor</a></li>
+          <li class="menu-li"><a href="#">News</a></li>
+        </ul>
+      </nav>
+
+      <div class="right-logo-div">
+        <a href="#" class="right-logo">CC Concert</a>
+      </div>
+    </div>
+  </div>
+  `;
+}
+
+document.querySelectorAll('.header').forEach(setNav);
+
 // Mobile Menu
 function openNav() {
   document.getElementById('menu').style.width = '100%';
@@ -16,17 +58,17 @@ document.getElementById('closebtn').addEventListener('click', () => {
 });
 
 document.querySelectorAll('.menu-li').forEach((n) => n.addEventListener('click', () => {
-  if (window.innerWidth <= 800) {
+  if (window.innerWidth <= 768) {
     document.getElementById('menu').style.width = '0%';
   }
 }));
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 800) {
+  if (window.innerWidth >= 768) {
     document.getElementById('menu').style.width = 'fit-content';
   }
 
-  if (window.innerWidth <= 800) {
+  if (window.innerWidth <= 768) {
     document.getElementById('menu').style.width = '0%';
   }
 });
