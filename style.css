@@ -139,10 +139,9 @@ header {
   font-weight: lighter;
 }
 
-h1 {
-  color: var(--highlight);
-  font-weight: bolder;
-  line-height: normal;
+.h1-img {
+  height: 200px;
+  width: auto;
 }
 
 .description-div {
