@@ -31,6 +31,55 @@ window.addEventListener('resize', () => {
   }
 });
 
+// Program Array
+const programs = [
+  {
+    iconData: 'bx:time',
+    name: 'Opening',
+    description: 'Attendants will have time to accommodate and buy some food while the band does a last rehearse.',
+  },
+  {
+    iconData: 'fluent:chart-person-28-regular',
+    name: 'Talking',
+    description: 'The band will talk about the rebranding as well as their inspiration behind their new album.',
+  },
+  {
+    iconData: 'emojione-monotone:guitar',
+    name: 'Live Concert',
+    description: 'The so awaited new album will be performed live for the first time.',
+  },
+  {
+    iconData: 'bx:pen',
+    name: 'Album Signing',
+    description: 'The band will make personalized signs on the albums of the attendants.',
+  },
+  {
+    iconData: 'ic:outline-forum',
+    name: 'Forum',
+    description: 'Attendants will have the chance to ask their questions to the band members.',
+  },
+];
+
+// Program Division
+const programsDiv = document.getElementById('programs-div');
+
+programs.forEach((program) => {
+  const programDiv = document.createElement('div');
+  programDiv.setAttribute('class', 'program-div');
+
+  programDiv.innerHTML = `
+    <span class="iconify program-icon" data-icon="${program.iconData}"></span>
+    <div class="program-title-div">
+      <h3 class="program-div-title">${program.name}</h3>
+    </div>
+    <p class="program-div-description">
+    ${program.description}
+    </p>
+  `;
+
+  programsDiv.appendChild(programDiv);
+});
+
 // Band Members
 
 const bandMembers = [
