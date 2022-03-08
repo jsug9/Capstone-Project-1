@@ -137,7 +137,7 @@ header {
 
 .program {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.2rem;
 }
 
 .program-div {
@@ -435,7 +435,7 @@ hr {
   }
 
   .concert-agenda {
-    padding: 3rem 5rem;
+    padding: 3rem 6rem;
   }
 
   .program {
@@ -444,6 +444,7 @@ hr {
 
   .program-div {
     flex-direction: column;
+    text-align: center;
   }
 
   .program-icon {
