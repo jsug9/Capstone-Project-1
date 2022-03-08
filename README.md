@@ -14,6 +14,10 @@
 
 For a live demo of the Portfolio [click here](https://jsug9.github.io/Capstone-Project-1/).
 
+## Presentation
+
+To see the presentation in a video [click here](https://www.loom.com/share/8e15c2f829d94acb8475b33f7113267a).
+
 ## Author
 
 👤 **Augusto Galindo**
