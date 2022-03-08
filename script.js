@@ -32,6 +32,7 @@ window.addEventListener('resize', () => {
 });
 
 // Band Members
+
 const bandMembers = [
   {
     name: 'Alejandro Chavez',
@@ -69,8 +70,8 @@ const bandMembers = [
 const membersSection = document.getElementById('members');
 
 bandMembers.forEach((member, index) => {
-  const bandMember = document.createElement('div')
-  bandMember.setAttribute('class', 'band-member')
+  const bandMember = document.createElement('div');
+  bandMember.setAttribute('class', 'band-member');
 
   bandMember.innerHTML = `
   <div class="img-div">
@@ -82,7 +83,7 @@ bandMembers.forEach((member, index) => {
     <p class="dots-separation">.........</p>
     <p class="member-description">${member.description}</p>
   </div>
-  `
+  `;
 
-  membersSection.appendChild(bandMember)
-})
+  membersSection.appendChild(bandMember);
+});
