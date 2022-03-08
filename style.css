@@ -30,6 +30,10 @@ ul {
   padding: 0;
 }
 
+a {
+  color: var(--main);
+}
+
 a,
 a:link,
 a:visited {
@@ -38,6 +42,9 @@ a:visited {
 
 /* Header */
 .toggle-nav {
+  position: absolute;
+  top: 3px;
+  left: 5px;
   text-decoration: none;
   font-size: 40px;
   color: var(--main-theme);
@@ -282,6 +289,44 @@ hr {
 
 /* -----------------------ABOUT------------------------- */
 
+/* About */
+.about {
+  background-color: #f7f7f8;
+  background-image: url(Resources/backgrounds/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-h1 {
+  color: var(--highlight);
+  font-family: var(--cocogoose);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-description-div {
+  padding: 3%;
+  background-color: white;
+  text-align: center;
+  border: 3px solid var(--background);
+  margin-top: 3%;
+  margin-bottom: 5%;
+  font-size: 1.1rem;
+}
+
+.about-email {
+  font-weight: bold;
+}
+
+.about-email:hover {
+  text-decoration: underline;
+}
+
 /* Post */
 .post {
   padding: 7.5% 15%;
@@ -462,6 +507,11 @@ hr {
     font-size: 14px;
   }
 
+  .about {
+    background-position-y: 30px;
+    padding: 10% 5%;
+  }
+
   .members {
     padding: 0 1rem;
     grid-template-columns: auto;
@@ -481,10 +531,6 @@ hr {
 }
 
 @media (min-width: 768px) {
-  a {
-    color: var(--main);
-  }
-
   .navbar-div {
     padding: 0.7rem 5rem;
     width: 100%;
@@ -591,6 +637,11 @@ hr {
   .members {
     padding: 0 5rem;
     grid-template-columns: auto auto;
+  }
+
+  .about {
+    background-position: center;
+    padding: 10% 15%;
   }
 
   .past-concerts {
