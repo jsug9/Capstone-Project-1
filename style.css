@@ -6,6 +6,653 @@
   --cocogoose: 'COCOGOOSE', sans-serif;
 }
 
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: var(--lato);
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--main);
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* Header */
+.toggle-nav {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  text-decoration: none;
+  font-size: 40px;
+  color: var(--main-theme);
+  cursor: pointer;
+}
+
+header {
+  background-color: white;
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: baseline;
+  justify-items: baseline;
+  border-color: transparent;
+}
+
+.topbar {
+  padding: 0.4rem 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  background-color: var(--main);
+}
+
+.topbar-ul {
+  display: flex;
+  align-items: baseline;
+  justify-items: baseline;
+  gap: 15px;
+}
+
+.navbar-logo {
+  width: auto;
+  height: 45px;
+}
+
+.navbar-logo:hover {
+  opacity: 0.5;
+}
+
+.topbar-li a {
+  color: var(--background);
+}
+
+.topbar-li a:hover {
+  color: var(--highlight);
+  opacity: 0.7;
+}
+
+.topbar-li a:active {
+  color: var(--highlight);
+  opacity: 1;
+}
+
+.home-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-logo {
+  color: inherit;
+  font-weight: bold;
+}
+
+.right-logo-div {
+  display: flex;
+  padding: 5px 15px;
+  border: 3px solid var(--highlight);
+  color: var(--highlight);
+}
+
+.right-logo-div:hover {
+  background-color: var(--highlight);
+  opacity: 0.8;
+  color: white;
+}
+
+.right-logo-div:active {
+  background-color: var(--highlight);
+  opacity: 1;
+}
+
+/* Introduction */
+.introduction {
+  background-image: url(Resources/backgrounds/main-big.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.introduction-subtitle {
+  color: var(--highlight);
+  font-weight: lighter;
+}
+
+.h1-img {
+  height: 200px;
+  width: auto;
+}
+
+.description-div {
+  padding: 3%;
+  background-color: #f7f7f8;
+  text-align: center;
+  border: 3px solid white;
+}
+
+.date {
+  font-family: var(--cocogoose);
+  color: rgb(87, 87, 87);
+}
+
+.place {
+  font-weight: 900;
+  color: rgb(87, 87, 87);
+}
+
+/* Main Program */
+.concert-agenda {
+  background-image: url(Resources/backgrounds/repeat-x.png);
+  background-repeat: repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.program {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.program-div {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  gap: 10px;
+}
+
+.program-div-title {
+  color: var(--highlight);
+}
+
+.buy-tickets {
+  color: white;
+  text-decoration: underline !important;
+  padding-top: 1rem;
+}
+
+.buy-tickets:hover {
+  color: var(--highlight);
+  opacity: 0.7;
+}
+
+.buy-tickets:active {
+  opacity: 1;
+}
+
+/* Band Members */
+.band-members {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 3rem 0;
+}
+
+.members {
+  display: grid;
+  row-gap: 3rem;
+  column-gap: 1.5rem;
+}
+
+.band-member {
+  display: flex;
+  gap: 10px;
+}
+
+.member-details {
+  padding-top: 1.4rem;
+}
+
+.band-member-image {
+  width: auto;
+  height: 150px;
+}
+
+.member-position {
+  color: var(--highlight);
+}
+
+/* Footer */
+.sponsors {
+  background-color: #424146;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+hr {
+  width: 10%;
+  border: none;
+  height: 3px;
+  background: var(--highlight);
+}
+
+.sponsors-ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rights {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.bottom-logo {
+  width: auto;
+  height: 50px;
+}
+
+/* -----------------------ABOUT------------------------- */
+
+/* About */
+.about {
+  background-color: #f7f7f8;
+  background-image: url(Resources/backgrounds/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-h1 {
+  color: var(--highlight);
+  font-family: var(--cocogoose);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-description-div {
+  padding: 3%;
+  background-color: white;
+  text-align: center;
+  border: 3px solid var(--background);
+  margin-top: 3%;
+  margin-bottom: 5%;
+  font-size: 1.1rem;
+}
+
+.about-email {
+  font-weight: bold;
+}
+
+.about-email:hover {
+  text-decoration: underline;
+}
+
+/* Post */
+.post {
+  padding: 7.5% 15%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.post-logo {
+  width: auto;
+  height: 80px;
+  padding: 0.5rem;
+  border: 1px solid var(--background);
+}
+
+.gray-line {
+  width: 100%;
+  border: none;
+  height: 2px;
+  background: var(--background);
+}
+
+.about-footer {
+  background-color: #424146;
+  color: white;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+/* Past Concerts */
+.past-concerts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.events {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-color: var(--highlight);
+  background-blend-mode: multiply;
+  background-size: cover;
+  flex-direction: column;
+  color: white;
+  padding: 80px 0;
+  gap: 0.5rem;
+}
+
+.event-date {
+  font-family: var(--cocogoose);
+}
+
+#event1 {
+  background-image: url(Resources/about/event1.jpg);
+}
+
+#event2 {
+  background-image: url(Resources/about/event2.jpg);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+
+  .topbar,
+  #logo,
+  .right-logo,
+  .right-logo-div {
+    display: none;
+  }
+
+  nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: var(--main);
+    backdrop-filter: blur(3rem);
+    opacity: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .menu-ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 120px;
+    font-weight: bold;
+  }
+
+  .menu-li:hover {
+    opacity: 0.7;
+    font-size: 35px;
+    transition: opacity 1s;
+    transition: font-size 0.5s;
+  }
+
+  nav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--background);
+    display: block;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--highlight);
+    font-size: 38px;
+  }
+
+  .closebtn {
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 45px;
+  }
+
+  .introduction {
+    padding: 15% 5%;
+  }
+
+  .description-div {
+    width: 100%;
+  }
+
+  .concert-agenda {
+    padding: 3rem 1rem;
+  }
+
+  .program {
+    flex-direction: column;
+  }
+
+  .program-div {
+    flex-direction: row;
+  }
+
+  .program-icon {
+    font-size: 20px;
+    min-width: 20px;
+  }
+
+  .program-div-title {
+    font-size: 15px;
+    min-width: 65px;
+    width: 65px;
+  }
+
+  .program-div-description {
+    font-size: 14px;
+  }
+
+  .about {
+    background-position-y: 30px;
+    padding: 10% 5%;
+  }
+
+  .members {
+    padding: 0 1rem;
+    grid-template-columns: auto;
+  }
+
+  .post {
+    padding: 7.5% 5%;
+  }
+
+  .past-concerts {
+    padding: 5% 4%;
+  }
+
+  .events {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-div {
+    padding: 0.7rem 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right-navbar {
+    display: flex;
+    gap: 25px;
+  }
+
+  nav {
+    left: 0;
+    top: 0;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .menu-ul {
+    gap: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 0;
+    width: fit-content;
+    font-weight: bold;
+  }
+
+  .menu-li:hover {
+    opacity: 0.7;
+    font-size: 15px;
+    transition: opacity 1s;
+    transition: font-size 0.5s;
+  }
+
+  nav a:hover {
+    color: var(--highlight);
+    transition: color 0.5s;
+  }
+
+  nav a:active,
+  .menu-li:active {
+    color: var(--highlight);
+    opacity: 1;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  .closebtn {
+    display: none;
+  }
+
+  #home-li {
+    display: none;
+  }
+
+  .introduction {
+    padding: 10%;
+  }
+
+  .introduction-subtitle {
+    font-size: 30px;
+  }
+
+  .description-div {
+    width: 63%;
+  }
+
+  .concert-agenda {
+    padding: 3rem 6rem;
+  }
+
+  .program {
+    flex-direction: row;
+  }
+
+  .program-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .program-icon {
+    font-size: 30px;
+  }
+
+  .program-title-div {
+    display: flex;
+    min-height: 40px;
+    text-align: center;
+  }
+
+  .members {
+    padding: 0 5rem;
+    grid-template-columns: auto auto;
+  }
+
+  .about {
+    background-position: center;
+    padding: 10% 15%;
+  }
+
+  .past-concerts {
+    padding: 5% 15%;
+  }
+
+  .events {
+    grid-template-columns: auto auto;
+  }
+
+  .post {
+    padding: 7.5% 15%;
+  }
 }
