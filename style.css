@@ -146,11 +146,6 @@ header {
   font-weight: lighter;
 }
 
-.h1-img {
-  height: 200px;
-  width: auto;
-}
-
 .description-div {
   padding: 3%;
   background-color: #f7f7f8;
@@ -476,6 +471,11 @@ hr {
     padding: 15% 5%;
   }
 
+  .h1-img {
+    height: auto;
+    width: 90%;
+  }
+
   .description-div {
     width: 100%;
   }
@@ -601,6 +601,11 @@ hr {
 
   .introduction {
     padding: 10%;
+  }
+
+  .h1-img {
+    height: 200px;
+    width: auto;
   }
 
   .introduction-subtitle {
